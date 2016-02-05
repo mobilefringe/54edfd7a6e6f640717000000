@@ -21,7 +21,7 @@
                     <p class="directory_content">{{address1}}</p>
                     <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
                      <br>
-                    <p class="directory_content"><strong>Cindy Lavign</strong> 
+                    <p class="directory_content"><strong>Cindy Lavigne</strong> 
                     <br>General Manager
                     <br>613-592-7515
                     <br><a href="mailto:clavigne@bentallkennedy.com ">clavigne@bentallkennedy.com</a></p>
@@ -122,7 +122,7 @@
                     <p class="directory_content">{{address1}}</p>
                     <p class="directory_content">{{city}}, {{province_state}} {{postal_code}}</p>
                     <br>
-                    <p class="directory_content"><strong>Cindy Lavign</strong> 
+                    <p class="directory_content"><strong>Cindy Lavigne</strong> 
                     <br>General Manager
                     <br>613-592-7515
                     <br><a href="mailto:clavigne@bentallkennedy.com ">clavigne@bentallkennedy.com</a></p>
