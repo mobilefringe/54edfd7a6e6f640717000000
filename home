@@ -130,7 +130,7 @@
     		        $(".custom_popup").remove();
                 })
                 
-                if((popup.contest) != null){
+                if((popup.contest) != null || popup.contest != undefined){
                     $('.popup_form_div').css('visibility', 'hidden');
                     $('.custom_popup').css('background-image', 'url(//mallmaverick.cdn.speedyrails.net' + popup.photo_url + ')');
                     // $('.custom_img').attr('src', '//mallmaverick.cdn.speedyrails.net'+ popup.photo_url);
