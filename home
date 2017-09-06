@@ -129,6 +129,11 @@
                     $(".modal-backdrop").remove();
     		        $(".custom_popup").remove();
                 })
+                if(popup.contest != null){
+                    console.log("It's contest time");
+                } else {
+                    console.log("No contest")
+                }
                 
                 if(isEmpty(popup.contest) == null){
                     $('.custom_img').attr('src', '//mallmaverick.cdn.speedyrails.net'+ popup.photo_url);
