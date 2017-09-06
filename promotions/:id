@@ -131,7 +131,7 @@
                         
                     } else {
                         // val.alt_promo_image_url = "//kodekloud.s3.amazonaws.com/sites/54edfd7a6e6f640717000000/3ad6017015beb7c172f22bb1a3c96e95/hazeldean_default.jpg"
-                        val.alt_promo_image_url = store_details.store_front_url;
+                        val.alt_promo_image_url = store_details.store_front_url_abs;
                     }
                 } else {
                     if (val.promotionable_type == "Store") {
