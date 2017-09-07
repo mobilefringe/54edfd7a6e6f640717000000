@@ -30,9 +30,9 @@
                 <script id="promo_template" type="x-tmpl-mustache/text">
                     <div class="promo_inside_content">
                         <div class="promo_image_div">
-                           
+                            <a href="{{alt_promo_image_url}}" rel="lightbox-gallery" title="{{name}}">
                                 <img alt="promo image" class="promo_image" src="{{alt_promo_image_url}}" />
-                            
+                            </a> 
                         </div>
                         <div class="promo_desc_box">
                             <a href="../promotions/{{slug}}"><p class="promo_header right_column_header">{{name}}</p></a>
