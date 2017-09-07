@@ -106,6 +106,7 @@
             $.each( item_list , function( key, val ) {
                 val.alt_promo_image_url = val.promo_image_url_abs;
                 if((val.promo_image_url_abs).indexOf('missing.png') > -1){
+                    var store_details = getStoreDetailsByID(val.promotionable_id);
                     var store_front = getImageURL(store_details.store_front_url);
                     val.alt_promo_image_url = store_front;
                     if(store_front == null) {
