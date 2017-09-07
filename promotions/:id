@@ -63,14 +63,14 @@
     $(document).ready(function() {
         function renderAll (){
             var propertyDetails = getPropertyDetails();
-            renderPageData('#centre_info_container','#centre_info_template',propertyDetails, 'property_details')
+            renderPageData('#centre_info_container','#centre_info_template', propertyDetails, 'property_details')
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
             promo_details = getPromotionDetailsBySlug(slug);
             console.log(promo_details)
-            renderPageData('#breadcrumb_container','#breadcrumb_template',promo_details, 'promo_details')
-            renderPageData('#banner_container','#banner_template',promo_details, 'promo_details')
-            render_page_details("#promo_container", "#promo_template", promo_details)
+            renderPageData('#breadcrumb_container','#breadcrumb_template', promo_details, 'promo_details');
+            renderPageData('#banner_container','#banner_template', promo_details, 'promo_details');
+            render_page_details("#promo_container", "#promo_template", promo_details);
             
             $.getScript("//cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
             $('head').append('<link rel="stylesheet" href="//cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
@@ -79,7 +79,6 @@
             $("#main_content").show();
         }
         
-    
         function renderPageData(container, template, collection, type){
             var item_list = [];
             var item_rendered = [];
@@ -93,9 +92,7 @@
             $.each( collection , function( key, val ) {
                 var rendered = Mustache.render(template_html,val);
                 item_rendered.push(rendered);
-    
             });
-            
             $(container).show();
             $(container).html(item_rendered.join(''));
         };
