@@ -132,13 +132,13 @@
                 //     } else {
                 //         val.alt_promo_image_url = "//kodekloud.s3.amazonaws.com/sites/54edfd7a6e6f640717000000/3ad6017015beb7c172f22bb1a3c96e95/hazeldean_default.jpg"
                 //     }
-                // } else {
-                //     if (val.promotionable_type == "Store") {
-                //         var store_details = getStoreDetailsByID(val.promotionable_id);
-                //         val.store_detail_btn = store_details.slug 
-                //         val.store_name = store_details.name
-                //     }
-                //   val.alt_promo_image_url = getCloudinaryImageUrl(val.promo_image_url);
+                } else {
+                    if (val.promotionable_type == "Store") {
+                        var store_details = getStoreDetailsByID(val.promotionable_id);
+                        val.store_detail_btn = store_details.slug 
+                        val.store_name = store_details.name
+                    }
+                    val.alt_promo_image_url = getCloudinaryImageUrl(val.promo_image_url);
                 }
                 var start = moment(val.start_date).tz(getPropertyTimeZone());
                 var end = moment(val.end_date).tz(getPropertyTimeZone());
