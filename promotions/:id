@@ -70,7 +70,7 @@
             console.log(promo_details)
             renderPageData('#breadcrumb_container','#breadcrumb_template', promo_details, 'promo_details');
             renderPageData('#banner_container','#banner_template', promo_details, 'promo_details');
-            // render_page_details("#promo_container", "#promo_template", promo_details);
+            render_page_details("#promo_container", "#promo_template", promo_details);
             
             $.getScript("//cdn.jsdelivr.net/slimbox/2.0.5/js/slimbox2.js");
             $('head').append('<link rel="stylesheet" href="//cdn.jsdelivr.net/slimbox/2.0.5/css/slimbox2.css" type="text/css" media="screen" />');
@@ -113,14 +113,14 @@
                         val.store_detail_btn = store_details.slug 
                         val.store_name = store_details.name
                     }
-                    if((val.promo_image_url_abs).indexOf('missing.png') > -1){
-                        var store_front = getImageURL(store_details.store_front_url);
-                        val.alt_promo_image_url = store_front;
+                    // if((val.promo_image_url_abs).indexOf('missing.png') > -1){
+                    //     var store_front = getImageURL(store_details.store_front_url);
+                    //     val.alt_promo_image_url = store_front;
                 
-                        if(store_front == null) {
-                            val.alt_promo_image_url = "//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/dcd66cb0efbccf1a9dc76822e0b9da23/logo_10dundas.png"
-                        }
-                    }
+                    //     if(store_front == null) {
+                    //         val.alt_promo_image_url = "//kodekloud.s3.amazonaws.com/sites/54b83f086e6f646b45000000/dcd66cb0efbccf1a9dc76822e0b9da23/logo_10dundas.png"
+                    //     }
+                    // }
     
                 // if ((val.promo_image_url).indexOf('missing.png') > -1){
                 //     if (val.promotionable_type == "Store") {
