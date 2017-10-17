@@ -316,7 +316,7 @@
                             {{city}}, {{province_state}}
                         
                             </p>
-                            <p><i class="fa fa-phone"></i>        613-592-0095</p>
+                            <p><i class="fa fa-phone"></i> 613-592-6184</p>
                             <p><i class="fa fa-envelope"></i> <a href="mailto:{{contact_email}}">        {{contact_email}}</a></p>
                             </br>
                             {% endraw %}
