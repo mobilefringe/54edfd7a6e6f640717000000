@@ -335,7 +335,7 @@
                                 <a href="/stores/{{slug}}" class="list-group-item">
                                     <div class="name">{{name}}</div>
                                     <div class="description">{{description_trim}}</div>
-                                    <div class="phone">613-592-6184</div>
+                                    <div class="phone">{{phone}}</div>
                                 </a>
                             {{/stores}}
                             </div>
